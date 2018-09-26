@@ -1,25 +1,29 @@
+body, html {
+    height: 100%;
+}
+
 .wrapper {
     /* font-family: 'Slabo 27px', serif; */
     line-height:1.5;
     color:#555;
     font-family: 'Indie Flower', cursive;
     font-size: 1.2em;
+    height: 100%;
 
-    float:none;
+    /* float:none;
     width:1220px;
     margin:0 auto;
     background-color:#fff;
-    box-shadow:0 0 10px rgba(0,0,0,.1);
+    box-shadow:0 0 10px rgba(0,0,0,.1); */
 }
 
-logo {
-    
+.navbar {
+    font-size: 1.2em;
+    color:#555;
 }
 
-body.stretched .container-fullwidth{
-    position:relative;
-    padding:0 60px;
-    width:100%
+.bg-light {
+	background-color: #e9ecef !important;
 }
 
 .clear{
@@ -36,10 +40,6 @@ body.stretched .container-fullwidth{
     outline:0!important
 }
 
-img{
-    max-width:100%
-}
-
 span.middot{
     display:inline-block;
     margin:0 5px
@@ -49,11 +49,22 @@ span.middot{
     margin-bottom:0!important
 }
 
-.parallax{
-    background-color:transparent;
-    background-attachment:fixed;
-    background-position:50% 0;
-    background-repeat:no-repeat;
-    overflow:hidden;
-    will-change:transform
+.parallax {
+    /* The image used */
+    background-image: url('../images/parallax1.jpeg');
+
+    /* Full height */
+    height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    margin: 0;
+}
+
+.page-parallax-content {
+    
 }
