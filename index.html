@@ -3,19 +3,24 @@
 
 <head>
     <meta charset="UTF-8">
-    <!-- <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">  -->
-    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet"> 
-    <link rel="stylesheet" href="css/style.css" type="text/css" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" crossorigin="anonymous">
+
+    <!-- <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">  -->
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
     <title>ShopperS!!</title>
 </head>
 
-<body>
+<body class="sretched">
     <!-- http://themes.semicolonweb.com/html/canvas/services.html -->
 
-    <div class="wrapper">
+    <div id="wrapper" class="clearfix">
         <header id="header" class="full-header">
             <div id="header-wrap">
                 <div class="container clearfix">
@@ -23,72 +28,66 @@
                         <i class="icon-reorder"></i>
                     </div>
 
-                    <div id="logo">
-                        <a href="#" class="standard-logo" data-dark-logo="images/logo-dark.png"><img src="images/logo.png"
-                                alt="Canvas Logo"></a>
-                    </div>
+                    <nav id="primary-menu" class="navbar navbar-expand-sm bg-light navbar-light justify-content-end">
 
-                    <nav id="primary-menu">
-                        <!-- Menu Items - dropdowns -->
-                        <ul>
-                            <li>
-                                <a href="#">Home</a>
+                        <!-- Logo -->
+                        <div id="logo" class="logo">
+                            <a href="#" class="standard-logo" data-dark-logo="images/logo-dark.png"><img src="images/logo.png"
+                                alt="Canvas Logo"></a>
+                        </div>
+
+                        <!-- Menu Items - logo/menu/search/cart -->
+                        <ul class="nav nav-pills ">
+
+                            <!-- <li class="navbar-item">
+                                    <a href="#" class="standard-logo" data-dark-logo="images/logo-dark.png"><img src="images/logo.png"
+                                        alt="Canvas Logo"></a>
+                            <a href="#" class="nav-link">ShopperS!!</a>
+                            </li> -->
+
+                            <!-- Menu -->
+                            <li class="nav-item ">
+                                <a href="#" class="nav-link">Home</a>
                             </li>
-                            <li>
-                                <a href="#">Account</a>
-                                <ul>
-                                    <li>
-                                        <a href="#">Login</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Register</a>
-                                    </li>
-                                </ul>
+                            <li class="nav-item dropdown ">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Account</a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Login</a>
+                                    <a class="dropdown-item" href="#">Register</a>
+                                </div>
                             </li>
-                            <li>
-                                <a href="#">Categories</a>
-                                <ul>
-                                    <li>
-                                        <a href="#">Electronics</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Appliances</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Apparels</a>
-                                        <ul>
-                                            <li>
-                                                <a href="#">Men</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Women</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Kids</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="#">Home Decor</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Books</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Others</a>
-                                    </li>
-                                </ul>
+                            <li class="nav-item dropdown ">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Categories</a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Electronics</a>
+                                    <a class="dropdown-item" href="#">Appliances</a>
+                                    <a class="dropdown-item" href="#">Apparels</a>
+                                    <a class="dropdown-item" href="#">Home Decor</a>
+                                    <a class="dropdown-item" href="#">Books</a>
+                                    <a class="dropdown-item" href="#">Others</a>
+                                </div>
+
                             </li>
-                            <li>
-                                <a href="#">Deals</a>
+                            <li class="nav-item ">
+                                <a href="#" class="nav-link disabled">Deals</a>
                             </li>
+
+                            <!-- Search -->
+                            <li class="nav-item " id="top-search">
+                                <form class="form-inline" action="/action_page.php">
+                                    <input class="form-control mr-sm-2" type="text" name="query" value="" placeholder="Type &amp; Hit Enter..">
+                                    <button class="btn btn-success" type="submit">Search</button>
+                                </form>
+                            </li>
+
+                            <!-- Cart - TODO -->
                         </ul>
 
                         <!-- Search Icon -->
-                        <div id="top-search">
+                        <!-- <div id="top-search">
                             <a href="#" id="top-search-trigger"><i class="icon-search3"></i><i class="icon-line-cross"></i></a>
                             <input type="text" name="query" value="" placeholder="Type &amp; Hit Enter..">
-                        </div>
+                        </div> -->
 
                         <!-- Cart -->
                         <div id="top-cart">
@@ -101,7 +100,7 @@
 
         <!-- Hero Unit - Carousel -->
         <section id="page-title">
-            <div class="container clearfix">
+            <div class="page-title-wrap container clearfix">
                 <h1>Services</h1>
                 <span>We provide Amazing Solutions</span>
                 <ol class="breadcrumb">
@@ -114,15 +113,16 @@
 
         <!-- Paper box section - row/columns -->
         <section id="page-content">
-            <div class="page-content-wrap">
+            <div class="page-content-wrap container clearfix">
+                <h4>Key Highlights.. !!</h4>
                 <div class="col_one_third nobottommargin">
                     <div class="fbox-media">
                         <img src="images/flex1.jpeg" alt="Why choose Us?">
                     </div>
                     <div class="fbox-desc">
                         <h3>Why choose Us.<span class="subtitle">Because we are Reliable.</span></h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi rem, facilis nobis
-                            voluptatum est voluptatem accusamus molestiae eaque perspiciatis mollitia.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi rem, facilis nobis voluptatum
+                            est voluptatem accusamus molestiae eaque perspiciatis mollitia.</p>
                     </div>
                 </div>
                 <div class="col_one_third nobottommargin">
@@ -131,8 +131,8 @@
                     </div>
                     <div class="fbox-desc">
                         <h3>Why choose Us.<span class="subtitle">Because we are Reliable.</span></h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi rem, facilis nobis
-                            voluptatum est voluptatem accusamus molestiae eaque perspiciatis mollitia.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi rem, facilis nobis voluptatum
+                            est voluptatem accusamus molestiae eaque perspiciatis mollitia.</p>
                     </div>
                 </div>
                 <div class="col_one_third nobottommargin">
@@ -141,8 +141,8 @@
                     </div>
                     <div class="fbox-desc">
                         <h3>Why choose Us.<span class="subtitle">Because we are Reliable.</span></h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi rem, facilis nobis
-                            voluptatum est voluptatem accusamus molestiae eaque perspiciatis mollitia.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi rem, facilis nobis voluptatum
+                            est voluptatem accusamus molestiae eaque perspiciatis mollitia.</p>
                     </div>
                 </div>
 
@@ -193,8 +193,7 @@
                         </div>
                         <div class="clear"></div>
                         <i class="icon-envelope2"></i> <a href="#" class="cf_email">info@shoppers.in</a> <span class="middot">&middot;</span>
-                        <i class="icon-headphones"></i> +91-12-3456-789 <span class="middot">&middot;</span> <i class="icon-skype2"></i>
-                        ShopperSOnSkype
+                        <i class="icon-headphones"></i> +91-12-3456-789 <span class="middot">&middot;</span> <i class="icon-skype2"></i>                        ShopperSOnSkype
                     </div>
                 </div>
             </div>
@@ -202,6 +201,13 @@
 
 
     </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" crossorigin="anonymous"></script>
+</body>
 </body>
 
 </html>

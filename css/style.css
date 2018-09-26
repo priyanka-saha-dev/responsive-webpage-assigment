@@ -1,5 +1,59 @@
 .wrapper {
     /* font-family: 'Slabo 27px', serif; */
+    line-height:1.5;
+    color:#555;
     font-family: 'Indie Flower', cursive;
     font-size: 1.2em;
+
+    float:none;
+    width:1220px;
+    margin:0 auto;
+    background-color:#fff;
+    box-shadow:0 0 10px rgba(0,0,0,.1);
+}
+
+logo {
+    
+}
+
+body.stretched .container-fullwidth{
+    position:relative;
+    padding:0 60px;
+    width:100%
+}
+
+.clear{
+    clear:both;
+    display:block;
+    font-size:0;
+    height:0;
+    line-height:0;
+    width:100%;
+    overflow:hidden
+}
+
+:active,:focus{
+    outline:0!important
+}
+
+img{
+    max-width:100%
+}
+
+span.middot{
+    display:inline-block;
+    margin:0 5px
+}
+
+.nobottommargin{
+    margin-bottom:0!important
+}
+
+.parallax{
+    background-color:transparent;
+    background-attachment:fixed;
+    background-position:50% 0;
+    background-repeat:no-repeat;
+    overflow:hidden;
+    will-change:transform
 }
