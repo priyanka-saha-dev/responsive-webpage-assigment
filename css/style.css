@@ -1,9 +1,35 @@
-/* body, html {
-    height: 100%;
+body, html {
+    font-family: 'Rubik', sans-serif;
+    
+    /* line-height:1.5; */
+}
+
+.brand-text-highlight {
+    color: aqua;
+}
+
+.brand-text {
+    color: aliceblue;
+}
+
+.nav-link, .dropdown-item {
+    color: steelblue;
+}
+
+.page-slider {
+    background: url('../images/slider.png') center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    position: relative;
+}
+
+.page-slider .content {
+    position: absolute;
     width: 100%;
-    font-family: 'Slabo 27px', serif;
-    line-height:1.5;
-    color:#555;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 
@@ -12,51 +38,52 @@
     color:#555;
 }
 
-.bg-light {
-	background-color: #e9ecef !important;
+.paper-flex-container-2{
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    text-align: center;
+    margin-top: 8%;
+    margin-bottom: 5%
 }
-.clear{
-    clear:both;
-    display:block;
-    font-size:0;
-    height:0;
-    line-height:0;
-    width:100%;
-    overflow:hidden
-}
-:active,:focus{
-    outline:0!important
-}
-span.middot{
-    display:inline-block;
-    margin:0 5px
-}
-.nobottommargin{
-    margin-bottom:0!important
-} */
 
-/* section {
-    height: 100%;
-    width: 100%;
-  }
-  body {
-    margin: 0;
-  }
-  header {
+.paper-flex-container {
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%
+}
+
+.paper-flex-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+} 
+
+.paper{
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0 0 20px grey;
+    padding: 0.25em;
+    margin: -1.9em;
+}
+
+.paper img
+{
+    height: 150px;
+    width:250px;
+}
+
+.paper h2{
+    font-size: 1em;
+    color: #444;
+}
+
+.paper p{
+    font-size: 0.8em;
+    color: coral;
     padding: 1em;
-  } */
-.section-1 {
-    /* text-align: center; */
-    background-image: url('../images/parallax1.jpg');
-    /* padding: 10em;*/
-    width: 800px; 
-    height: 800px; 
-    /* background-attachment: fixed; */
-  }
-
-.section-2 {
-    background-image: url('../images/parallax2.jpg');
-    width: 1286px;
-    height: 100vh;
-    background-attachment: fixed;
-  } 
+}
