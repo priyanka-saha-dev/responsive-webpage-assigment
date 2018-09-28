@@ -14,7 +14,19 @@ body, html {
   font-weight: 300;
 }
 
-.dropdown-item, .link-text {
+.brand-logo-small {
+  font-size: 20px;
+  letter-spacing: 3px;
+  color: steelblue;
+  font-style: oblique;
+  font-weight: 300;
+}
+
+.brand-text {
+  color: aliceblue;
+}
+
+.dropdown-item, .link-text, .text-header {
   color: steelblue;
 }
 
@@ -23,6 +35,10 @@ body, html {
 }
 .brand-text {
   color: aliceblue;
+}
+
+h5 {
+  font-weight: 500;
 }
 
 /* Parallax */
@@ -42,17 +58,60 @@ body, html {
   transform: translate(-50%, -50%);
 }
 
-/* Flex Box */
-.flox-box-container {
-  background-color: whitesmoke;
-  margin-top: -5%;
-  margin-bottom: 5% 
+/* Carousel */
+.carousel-item img {
+  border: 1px solid aqua;
 }
 
+/* Flex Box */
 .paper{
-  background-color: #fff;
+  background-color: whitesmoke;
   text-align: center;
   box-shadow: 0 0 1em grey;
   padding: 0.25em;
   margin: 0.1em;
+}
+
+/* Footer */
+.copyright-text {
+  font-size: 10px;
+}
+
+.dark, .footer-bs {
+  background-color:whitesmoke;  
+  color: steelblue;
+}
+
+.footer-bs .footer-brand p {
+  font-size: 11px;
+  color: steelblue;
+}
+
+.footer-bs .footer-nav ul.pages , .footer-bs .footer-nav ul.list, .footer-bs .footer-social ul {
+  list-style:none;
+  font-size: 11px;
+}
+
+.footer-bs .footer-social h4, .footer-bs .footer-nav h4, .footer-bs .footer-social h4 {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.footer-bs .footer-nav ul.list a, .footer-bs .footer-social a  {
+  color: steelblue;
+}
+.footer-bs .footer-nav ul.list a:hover, .footer-bs .footer-social a:hover  {
+  color: blue;
+  text-decoration:none;
+}
+
+.footer-bs .footer-ns h4 {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+.footer-bs .footer-ns p {
+  font-size:12px;
+  color:rgba(255,255,255,0.70);
 }
