@@ -11,192 +11,185 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" crossorigin="anonymous">
 
     <!-- <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">  -->
-    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
 
     <link rel="stylesheet" href="css/style.css" type="text/css" />
     <title>ShopperS!!</title>
+
 </head>
 
-<body class="sretched">
-    <!-- http://themes.semicolonweb.com/html/canvas/services.html -->
+<body>
+    <!-- Enclose in this to wrap in size ?? -->
+    <!-- <div class="container clearfix"></div> -->
 
-    <div id="wrapper" class="clearfix">
+    <!-- ==== Start Header ==== -->
+    <header id="header" class="page-header rounded-blocks">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light justify-content-end">
 
-        <header id="header">
-            <div id="header-wrap">
-                <div class="container clearfix">
-                    <!-- <div id="primary-menu-trigger">
-                        <i class="icon-reorder"></i>
-                    </div> -->
+            <a href="#"><img src="images/logo.png" class="img-fluid float-left" alt="Canvas Logo" width="250"></a>
 
-                    <!-- Logo -->
-                    <div id="logo" class="logo">
-                        <a href="#" data-dark-logo="images/logo-dark.png"><img src="images/logo.png" class="img-fluid float-left"
-                                alt="Canvas Logo" width="250"></a>
-                    </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
 
-                    <nav id="primary-menu" class="navbar navbar-expand-sm justify-content-end">
-                        <!-- Menu Items - logo/menu/search/cart -->
-                        <ul class="nav nav-pills">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            Account
+                          </a>
+                        
 
-                            <!-- Menu -->
-                            <li class="nav-item ">
-                                <a href="#" class="nav-link">Home</a>
-                            </li>
-                            <li class="nav-item dropdown ">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Account</a>
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="#">Login</a>
-                                    <a class="dropdown-item" href="#">Register</a>
-                                </div>
-                            </li>
-                            <li class="nav-item dropdown ">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Categories</a>
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="#">Electronics</a>
-                                    <a class="dropdown-item" href="#">Appliances</a>
-                                    <a class="dropdown-item" href="#">Apparels</a>
-                                    <a class="dropdown-item" href="#">Home Decor</a>
-                                    <a class="dropdown-item" href="#">Books</a>
-                                    <a class="dropdown-item" href="#">Others</a>
-                                </div>
-
-                            </li>
-                            <li class="nav-item ">
-                                <a href="#" class="nav-link disabled">Deals</a>
-                            </li>
-
-                            <!-- Search -->
-                            <!-- <li class="nav-item " id="top-search">
-                                <form class="form-inline" action="/action_page.php">
-                                    <input class="form-control mr-sm-2" type="text" name="query" value="" placeholder="Type &amp; Hit Enter..">
-                                    <button class="btn btn-success" type="submit">Search</button>
-                                </form>
-                            </li> -->
-
-                            <!-- Cart - TODO -->
-                        </ul>
-
-                        <!-- Search Icon -->
-                        <!-- <div id="top-search">
-                            <a href="#" id="top-search-trigger"><i class="icon-search3"></i><i class="icon-line-cross"></i></a>
-                            <input type="text" name="query" value="" placeholder="Type &amp; Hit Enter..">
-                        </div> -->
-
-                        <!-- Cart -->
-                        <!-- <div id="top-cart">
-                            <a href="#" id="top-cart-trigger"><i class="icon-shopping-cart"></i>0</a>
-                        </div> -->
-                    </nav>
-                </div>
-            </div>
-        </header>
-
-        <!-- Carousel -->
-        <!-- <section id="page-title">
-            <div class="page-title-wrap container clearfix">
-                <div class="page-caption parallx">
-                    <h2 data-animate="fadeInUp">Welcome to ShopperS!</h2>
-                    <p class="d-none d-sm-block" data-animate="fadeInUp" data-delay="200">Shop your heart away...!!</p>
-
-                </div>
-            </div>
-        </section> -->
-
-        <!-- Paper box section - row/columns -->
-        <!-- <section id="page-content">
-            <div class="page-content-wrap container clearfix">
-                <h4>Key Highlights.. !!</h4>
-                <div class="col_one_third nobottommargin">
-                    <div class="fbox-media">
-                        <img src="images/flex1.jpeg" alt="Why choose Us?">
-                    </div>
-                    <div class="fbox-desc">
-                        <h3>Why choose Us.<span class="subtitle">Because we are Reliable.</span></h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi rem, facilis nobis
-                            voluptatum
-                            est voluptatem accusamus molestiae eaque perspiciatis mollitia.</p>
-                    </div>
-                </div>
-                <div class="col_one_third nobottommargin">
-                    <div class="fbox-media">
-                        <img src="images/flex2.jpeg" alt="Why choose Us?">
-                    </div>
-                    <div class="fbox-desc">
-                        <h3>Why choose Us.<span class="subtitle">Because we are Reliable.</span></h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi rem, facilis nobis
-                            voluptatum
-                            est voluptatem accusamus molestiae eaque perspiciatis mollitia.</p>
-                    </div>
-                </div>
-                <div class="col_one_third nobottommargin">
-                    <div class="fbox-media">
-                        <img src="images/flex3.jpeg" alt="Why choose Us?">
-                    </div>
-                    <div class="fbox-desc">
-                        <h3>Why choose Us.<span class="subtitle">Because we are Reliable.</span></h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi rem, facilis nobis
-                            voluptatum
-                            est voluptatem accusamus molestiae eaque perspiciatis mollitia.</p>
-                    </div>
-                </div>
-
-            </div>
-        </section> -->
-
-        <!-- <footer id="footer" class="dark">
-            <div id="copyrights">
-                <div class="container clearfix">
-                    <div class="col_half">
-                        Copyrights &copy; 2014 All Rights Reserved by ShopperS! Inc.<br>
-                        <div class="copyright-links"><a href="#">Terms of Use</a> / <a href="#">Privacy Policy</a></div>
-                    </div>
-                    <div class="col_half col_last tright">
-                        <div class="fright clearfix">
-                            <a href="#" class="social-icon si-small si-borderless si-facebook">
-                                <i class="icon-facebook"></i>
-                                <i class="icon-facebook"></i>
-                            </a>
-                            <a href="#" class="social-icon si-small si-borderless si-twitter">
-                                <i class="icon-twitter"></i>
-                                <i class="icon-twitter"></i>
-                            </a>
-                            <a href="#" class="social-icon si-small si-borderless si-gplus">
-                                <i class="icon-gplus"></i>
-                                <i class="icon-gplus"></i>
-                            </a>
-                            <a href="#" class="social-icon si-small si-borderless si-pinterest">
-                                <i class="icon-pinterest"></i>
-                                <i class="icon-pinterest"></i>
-                            </a>
-                            <a href="#" class="social-icon si-small si-borderless si-vimeo">
-                                <i class="icon-vimeo"></i>
-                                <i class="icon-vimeo"></i>
-                            </a>
-                            <a href="#" class="social-icon si-small si-borderless si-github">
-                                <i class="icon-github"></i>
-                                <i class="icon-github"></i>
-                            </a>
-                            <a href="#" class="social-icon si-small si-borderless si-yahoo">
-                                <i class="icon-yahoo"></i>
-                                <i class="icon-yahoo"></i>
-                            </a>
-                            <a href="#" class="social-icon si-small si-borderless si-linkedin">
-                                <i class="icon-linkedin"></i>
-                                <i class="icon-linkedin"></i>
-                            </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Login</a>
+                                <a class="dropdown-item" href="#">Register</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
                         </div>
-                        <div class="clear"></div>
-                        <i class="icon-envelope2"></i> <a href="#" class="cf_email">info@shoppers.in</a> <span class="middot">&middot;</span>
-                        <i class="icon-headphones"></i> +91-12-3456-789 <span class="middot">&middot;</span> <i class="icon-skype2"></i>
-                        ShopperSOnSkype
+                    </li>
+
+                    <li class="nav-item dropdown " aria-labelledby="navbarDropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">Categories</a>
+                            
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Electronics</a>
+                                <a class="dropdown-item" href="#">Appliances</a>
+                                <a class="dropdown-item" href="#">Apparels</a>
+                                <a class="dropdown-item" href="#">Home Decor</a>
+                                <a class="dropdown-item" href="#">Books</a>
+                                <a class="dropdown-item" href="#">Others</a>
+                            </div>
+    
+                        </li>
+                        <li class="nav-item ">
+                            <a href="#" class="nav-link disabled">Deals</a>
+                        </li>
+                    
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+    <!-- ==== End Header ==== -->
+
+    <!-- ==== Start Slider - Hero Unit ==== -->
+    <section id="slider" class="page-slider">
+        <div class="content text-center">
+            <h1 class="brand-text">Welcome To <span class="brand-text-highlight">ShopperS!</span></h1>
+            <p class="brand-text text-capitalize">shop your heart away.... !
+            </p>
+        </div>
+    </section>
+    <!-- ==== End Slider ==== -->
+
+    <!-- ==== Start Row/Column ==== -->
+    <section class="paper-flex-container">
+        <section class="paper-flex-row">
+            <article class="paper">
+                <img src="images/flex1.jpg" alt="">
+            </article>
+
+            <article class="paper">
+                <img src="images/flex2.jpg" alt="">
+            </article>
+
+            <article class="paper">
+                <img src="images/flex3.jpg" alt="">
+            </article>
+
+            <article class="paper">
+                <img src="images/flex4.jpg" alt="">
+            </article>
+        </section>
+    </section>
+
+    <section class="paper-flex-container-2">
+        <section class="paper-flex-row">
+            <article class="paper">
+                <img src="images/flex1.jpg" alt="">
+            </article>
+
+            <article class="paper">
+                <img src="images/flex2.jpg" alt="">
+            </article>
+
+            <article class="paper">
+                <img src="images/flex3.jpg" alt="">
+            </article>
+
+            <article class="paper">
+                <img src="images/flex4.jpg" alt="">
+            </article>
+        </section>
+    </section>
+    <!-- ==== End Row/Column ==== -->
+
+    <!-- === Start - Footer === -->
+    <footer id="footer" class="dark rounded-blocks footer-bs">
+        <div id="copyrights" class="row footer-row">
+            <div class="col-md-3 footer-brand animated fadeInLeft">
+                <h3>ShopperS!</h3>
+                <p class="brand-text">Clothes, electronics, accessories - whatever your need for the hour maybe, this is your favorite online shopping
+                    site, is sure to spoil you with a wide range of products. </p>
+                <p class="brand-text copyright-text">© 2018 XYZ, All rights reserved</p>
+            </div>
+            <div class="col-md-4 footer-nav animated fadeInUp">
+                <h4>Menu</h4>
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul class="list">
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="list">
+                            <li><a href="#">Payments</a></li>
+                            <li><a href="#">Shipping</a></li>
+                            <li><a href="#">Cancellation & Returns</a></li>
+                            <li><a href="#">Refunds</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </footer> -->
+            <div class="col-md-2 footer-social animated fadeInDown">
+                <h4>Follow Us</h4>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">RSS</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 footer-ns animated fadeInRight">
+                <h4>Newsletter</h4>
+                <p>Reading is a great way to expand your knowledge and enhance your creativity. While the works of RK Narayan
+                    or Durjoy Datta would take you through relatable emotions via interesting characters and situations,
+                    authors like JK Rowling and Stephen King have successfully given us a glimpse into an entirely different
+                    world brimming of magic and surrealism. Head to your favorite online shopping site and get set to be
+                    spoilt for choice with the variety of books which are available at your disposal. </p>
+            </div>
 
+        </div>
+    </footer>
+    <!-- === End - Footer === -->
 
-    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

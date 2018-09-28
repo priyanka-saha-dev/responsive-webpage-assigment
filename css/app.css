@@ -1,0 +1,58 @@
+/* General CSS */
+body, html {
+  font-family: 'Rubik', sans-serif;
+}
+.rounded-blocks {
+  border-radius: 10px;
+}
+
+.brand-logo {
+  font-size: 30px;
+  letter-spacing: 3px;
+  color: steelblue;
+  font-style: oblique;
+  font-weight: 300;
+}
+
+.dropdown-item, .link-text {
+  color: steelblue;
+}
+
+.brand-text-highlight {
+  color: aqua;
+}
+.brand-text {
+  color: aliceblue;
+}
+
+/* Parallax */
+.page-slider {
+  background: url('../images/slider.png') center center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  padding-top: 15em;
+}
+
+.page-slider .content {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Flex Box */
+.flox-box-container {
+  background-color: whitesmoke;
+  margin-top: -5%;
+  margin-bottom: 5% 
+}
+
+.paper{
+  background-color: #fff;
+  text-align: center;
+  box-shadow: 0 0 1em grey;
+  padding: 0.25em;
+  margin: 0.1em;
+}
