@@ -6,6 +6,13 @@ body, html {
   border-radius: 10px;
 }
 
+/* Header */
+.progress {
+  width: 150%;
+  height: 150%;
+  line-height: 150%;
+}
+
 .brand-logo {
   font-size: 30px;
   letter-spacing: 3px;
@@ -72,6 +79,36 @@ h5 {
   margin: 0.1em;
 }
 
+/* Description */
+.page-description-article {
+  background-color:azure;  
+  color: steelblue;
+}
+
+.small-text {
+  font-size: 11px;
+}
+
+.page-description-article h4 {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  border-bottom: 2px solid ;
+  padding-bottom: 12px;
+}
+
+.page-description-article span {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: black;
+}
+
+.page-description-article p {
+  font-size: 15px;
+  padding-top: 5px;
+}
+
 /* Footer */
 .copyright-text {
   font-size: 10px;
@@ -82,36 +119,37 @@ h5 {
   color: steelblue;
 }
 
-.footer-bs .footer-brand p {
+.footer-brand p {
   font-size: 11px;
   color: steelblue;
 }
 
-.footer-bs .footer-nav ul.pages , .footer-bs .footer-nav ul.list, .footer-bs .footer-social ul {
+.list {
   list-style:none;
   font-size: 11px;
 }
 
-.footer-bs .footer-social h4, .footer-bs .footer-nav h4, .footer-bs .footer-social h4 {
-  font-size: 11px;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-}
-
-.footer-bs .footer-nav ul.list a, .footer-bs .footer-social a  {
+.list a {
   color: steelblue;
 }
-.footer-bs .footer-nav ul.list a:hover, .footer-bs .footer-social a:hover  {
+
+.list a:hover {
   color: blue;
   text-decoration:none;
 }
 
-.footer-bs .footer-ns h4 {
+.footer-brand h4, .footer-nav h4, .footer-social h4 {
   font-size: 11px;
   text-transform: uppercase;
   letter-spacing: 3px;
 }
-.footer-bs .footer-ns p {
-  font-size:12px;
-  color:rgba(255,255,255,0.70);
+
+/* .footer-nav, .footer-social  {
+  border-left:solid 1px steelblue;
+} */
+
+.social-newsletter label{
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
 }
